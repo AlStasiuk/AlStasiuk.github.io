@@ -2,102 +2,108 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/9650a62e47.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/style.css">
-  <title>Product Landing Page - freecodecamp</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aris</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header id="header">
-    <nav id="nav_bar">
-      <img id="header_img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="logo" class="logo">
-      <ul>
-        <a class="nav_link" href="#features">Features</a>
-        <a class="nav_link" href="#how_it_work">How It Works</a>
-        <a class="nav_link" href="#pricing">Pricing</a>
+    <!--  Brand Logo  -->
+    <a class="nav-brand" href="" target="_blank">
+      <img id="header-img" src="img/logo.png" alt="Aris">
+    </a>
+    
+    <!--  Menu  -->
+    <nav id="nav-bar" class="navbar">
+      <ul class="menu">
+        <li><a class="nav-link" href="#featured">Gallery</a></li>
+        <li><a class="nav-link" href="#collections">Collections</a></li>
+        <li><a class="nav-link" href="#about">About us</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
-
-  <div id="container">
-    <section class="message_box">
-      <h1>Handcrafted, home-made masterpieces</h1>
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-      <input id="email" type="email" name="email" placeholder="example@mail.com">
-      <input id="submit" type="submit" value="Get Started" class="button"></input>
-      </form>
-    </section>
-
-    <section id="features">
-      <div class="feature">
-        <i class="icon"></i>
-        <div>
-          <h2>Premium Materials</h2>
-          <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your
-            purchase.</p>
-        </div>
-      </div>
-      <div class="feature">
-        <i class="icon"></i>
-        <div>
-          <h2>Fast Shipping</h2>
-          <p>We make sure you receive your trombone as soon as we have finished making it. We also provide free returns
-            if you are not satisfied.</p>
-        </div>
-      </div>
-      <div class="feature">
-        <i class="icon"></i>
-        <div>
-          <h2>Quality Assurance</h2>
-          <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the
-            pitch of your instrument.</p>
-        </div>
-      </div>
-    </section>
-    <section id="how_it_work">
-      <iframe id="video" src="https://www.youtube.com/watch?v=y8Yv4pnO7qc"></iframe>
-    </section>
-    <section id="pricing">
-      <div class="price_box">
-        <h3>TENOR TROMBONE</h3>
-        <h2>$600</h2>
-        <p>Lorem ipsum.
-            Lorem ipsum.
-            Lorem ipsum dolor.
-            Lorem ipsum.</p>
-        <a href="#" class="button">SELECT</a>
-      </div>
-      <div class="price_box">
-        <h3>BASS TROMBONE</h3>
-        <h2>$900</h2>
-        <p>Lorem ipsum.
-            Lorem ipsum.
-            Lorem ipsum dolor.
-            Lorem ipsum.</p>
-        <a href="#" class="button">SELECT</a>
-      </div>
-      <div class="price_box">
-        <h3>VALVE TROMBONE</h3>
-        <h2>$1200</h2>
-        <p>Plays similar to a Trumpet
-            Great for Jazz Bands
-            Lorem ipsum dolor.
-            Lorem ipsum.</p>
-        <a href="#" class="button">SELECT</a>
-      </div>
-    </section>
-  </div>
-  <!-- footer -->
-  <footer id="main_footer">
-    <div>
-      <a href="#">Privacy</a>
-      <a href="#">Terms</a>
-      <a href="#">Contact</a>
+  
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-img">
+      <img src="img/girl.jpg" alt="girl">
     </div>
-    <p>&copy;Copyright 2022, Original Trombones</p>
-  </footer>
+    <div class="hero-text">
+      <h1>Our flowers</br>for any occasion</h1>
+      <a href="#featured" class="btn">View more</a>
+    </div>
+  </div>
+  
+  <!-- Featured Section -->
+  <section id="featured">
+    <div class="title title-left">
+      <span class="line"></span><h3>Importance</h3>
+    </div>
+    <div class="wrapper">
+      <div class="text">
+        <h2>The value of moments</h2>
+        <p>Our flower shop is not only about business, but also about beauty, values and interesting ideas.</p>
+        <a href="#" class=btn>Details</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Collection Section -->
+  <section id="collections">
+    <div class="title title-right">
+      <span class="line line-right"></span><h3>Collections</h3>
+    </div>
+    <div class="wrapper">
+      <a class="box box1" href="#">
+        <h4>Bouquets</h4>
+        <div class="box-overlay"></div>
+      </a>
+      <a class="box box2" href="#">
+        <h4>Wedding decor</h4>
+        <div class="box-overlay"></div>
+      </a>
+      <a class="box box3" href="#">
+        <h4>Master classes</h4>
+        <div class="box-overlay"></div>
+      </a>
+    </div>
+  </section>
+  
+  <!-- About Section -->
+  <section id="about">
+    <div class="title title-left">
+      <span class="line"></span><h3>HOW TO BECOME A FLORIST |10 Tips You Should Know!
+      </h3>
+    </div>
+    <div class="wrapper">
+      <div class="text">
+        <p>If you are curious about how to become a florist, I am sharing 10 tips you should know to get started in flower arranging in 2022 to make this creative career your new reality.</p>
+        <p>A florist uses creative design skills with flowers as their medium, often running their own business.</p>
+        <p>A florist job might include designing wedding flowers, owning a florist shop, being an event florist, styling floral designs for photo shoots, and much, more!</p>
+        <p>I share everything the  florist needs to know to go beyond diy flower arranging and take floral design to the next level with through floral design classes and flower tutorials.</p>
+        <p>You´ll also understand the real experience of what a florist shop and a florist job entails on a day-to-day basis! </p>
+      </div>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/boAW0UbwX5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="wrapper">
+      <div class="form-wrapper">    
+        <h4>We are ready to create something for you</h4>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+          <input type="submit" id="submit" value="OK" class="submit">
+        </form>
+      </div>
+  </section>
 </body>
-</html>
 
+</html>
