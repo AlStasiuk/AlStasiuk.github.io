@@ -24,6 +24,7 @@ h4{
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: #fefeff;
 }
 h6{
   font-weight: 500;
@@ -36,7 +37,7 @@ ul{
   list-style: none;
 }
 section{
-  padding: 5.8em 2em 0;
+  padding: auto;
 }
 .title{
   display: flex;
@@ -64,6 +65,7 @@ section{
   padding: .5em 1.5em;
   border: solid 1px #090b08;  
   transition: all .3s ease-in;
+  border-radius:2px;
 }
 .btn:hover, .btn:focus{
   transform: translate(0px, -2px);
@@ -84,7 +86,7 @@ header{
 header:before{
   content: "";
   position: absolute;
-  background-color: #fff;
+  background-color: #fefeff;
   width: 100%;
   height: 68%;
   z-index: -1;
@@ -109,7 +111,7 @@ header:before{
   position: absolute;
   width: 100%;
   height: 100vh;
-  background-color: #fff;
+  background-color: #fefeff;
   justify-content: space-evenly;
   align-items: center;
   z-index: -2;
@@ -133,28 +135,29 @@ a.nav-link:focus{
   margin-top: 3em;
 }
 
-/* Hero Section */
-.hero {
+/* Girl Section */
+.girl {
 	display: flex;
 	height: 100vh;
 	align-items: center;
 	background-image: url("img/girl.jpg") no-repeat right bottom;
 }
-.hero-img img{
+.girl-img img{
   display: none;
+  border-radius:2px;
 }
-.hero-text{
+.girl-text{
   padding: 0 2em 7.5em;
 }
 
 /* Featured Section */
 #featured {
-  background-color: rgb(245, 239, 239);
+  background-color: #ebd8d0;
   height: auto;
+  padding:2em 2em;
 }
 .text{
   text-align: center;
-  padding-top: 1em;
 }
 .text p{
   text-align: justify;
@@ -167,9 +170,11 @@ a.nav-link:focus{
   display: block;
   position: relative;
   padding: 1.3em;
-  background-color: #f5d9d6;
+  background-color: #d3ab9e;
   text-align: center;
   margin-bottom: 2em;
+  border-radius:2px;
+  
 }
 .box-overlay {
   display: block;
@@ -178,9 +183,10 @@ a.nav-link:focus{
   left: 0;
   width: 100%;
   height: 100%;
-	border: solid 3px #fff;
+	border: solid 3px #fefeff;
 	transform: translate(8px, 8px);
-  transition: all 1s ease;
+  transition: all 2s ease;
+  border-radius:2px;
 }
 .box:last-child{
   margin-bottom: 5.8em;
@@ -188,12 +194,12 @@ a.nav-link:focus{
 .box:hover .box-overlay,
 .box:focus .box-overlay
 {
-  transform: translate(0px, 0px) scale(0.92, 0.8);
+  transform: translate(0px, 0px) scale(0.90, 0.5);
 }
 
 /* About Section */
 #about{
-  background-color: rgb(245, 239, 239);
+  background-color: #ebd8d0;
 }
 section#about{
   padding-bottom: 5.8em;
@@ -212,6 +218,7 @@ section#about{
   padding-bottom: 56.25%; /* 16:9 */
   overflow: hidden;
   height: 0;
+  
 }
 .video-wrapper iframe{
   position: absolute;
@@ -219,18 +226,17 @@ section#about{
   left: 0;
   width: 100%;
   height: 100%;
+  
 }
 
 /* Contact Section */
-section#contact{
-  padding: 3em 2em .5em;
-}
+
 .form-wrapper:after,
 .contact-wrapper:after{
   display: block;
   content: "";
   margin: 2em auto;
-  border-bottom: solid 1px #dadada;
+  border-bottom: solid 1px #d3ab9e;
 }
 form{
   display: flex;
@@ -243,17 +249,19 @@ form input:last-child{
   flex: 1 0 20%;
   border-left: 0;  
   cursor: pointer;
-  background-color: #f5d9d6;
+  background-color: #d3ab9e;
   transition: all .25s ease;
 }
 #submit:hover {
-	background-color: #000;
-	color: #fff;
+	background-color: #ebd8d0;
+	color: #000;
   transition: all .25s ease;
+  border-radius:2px;
 }
 input{
   padding: 1em;
   border: 1px solid #000;
+  border-radius:2px;
 }
 .contact-wrapper .wrapper{
   display: flex;
@@ -290,21 +298,21 @@ input{
     font-size: 2em;
   }
   
-  /*  Hero Section  */
-  .hero{
+  /*  Girl Section  */
+  .girl{
     background-image: none;
     justify-content: center;
     overflow: hidden;
   }
-  .hero-img{
+  .girl-img{
     padding-top: 6.5em;
   }
-  .hero-img img{
+  .girl-img img{
     display: block;
     width: 14em;
     height: auto;
   }
-  .hero-text{
+  .girl-text{
     padding: 0 2em;
   }
   
@@ -342,6 +350,7 @@ input{
   .wrapper{
     display: flex;
   }
+
   
   /*  Header  */
   .nav-brand img{
@@ -396,7 +405,7 @@ input{
     margin: auto 4em;
   }
   
-  
+}
 @media(min-width: 992px){
   /*  Global  */
   section{
@@ -412,8 +421,8 @@ input{
     width: 5.5em;
   }
   
-  /*  Hero Section  */
-  .hero-img img{
+  /*  girl Section  */
+  .girl-img img{
     width: 14.5em;
   }
   
@@ -443,8 +452,8 @@ input{
     padding: 5.8em 11em 0;
   }
   
-  /*  Hero Section  */
-  .hero-img img{
+  /*  girl Section  */
+  .girl-img img{
     width: 15.5em;
   }
   
